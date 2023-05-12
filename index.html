@@ -10,43 +10,28 @@
     <div id="app">
       <h1>Forms</h1>
       <form>
-        <!-- Text Inputs -->
-        <!-- <label for="first-name">First name</label> -->
-        <input
-          type="email"
-          name="email"
-          placeholder="E-Mail"
-          value="me@example.com"
-        />
-        <input type="password" name="password" placeholder="Password" />
-        <!-- Number Input -->
-        <input type="number" name="quantity" />
-        <!-- Date Input -->
-        <input type="date" name="date" />
-        <!-- Checkbox -->
+        <input type="text" name="name" placeholder="Name" />
         <label>
-          Are you an admin?
-          <input type="checkbox" name="isAdmin" value="true" />
-        </label>
-        <!-- Select -->
-        <select name="favoriteFruit">
-          <option value="">Nothing selected</option>
-          <option value="banana">Banana</option>
-          <option value="apple">Apple</option>
-        </select>
-        <!-- Radio Group -->
-        <h3>Do you like cats</h3>
-        <label>
-          Yes
-          <input type="radio" name="likesCats" value="yes" />
+          Male
+          <input type="radio" name="gender" value="male" />
         </label>
         <label>
-          No
-          <input type="radio" name="likesCats" value="no" />
+          Female
+          <input type="radio" name="gender" value="female" />
         </label>
-        <textarea name="area" rows="10"></textarea>
-        <button type="submit">Submit form</button>
+        <label>
+          Diverse
+          <input type="radio" name="gender" value="diverse" />
+        </label>
+        <textarea name="description" rows="10"></textarea>
+        <label>
+          Agree to the terms?
+          <input type="checkbox" name="agree" value="yes" />
+        </label>
+        <p id="error"></p>
+        <button type="submit">Submit</button>
       </form>
+      <pre id="form-content"></pre>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
