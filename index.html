@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Forms</h1>
+      <form>
+        <!-- Text Inputs -->
+        <!-- <label for="first-name">First name</label> -->
+        <input
+          type="email"
+          name="email"
+          placeholder="E-Mail"
+          value="me@example.com"
+        />
+        <input type="password" name="password" placeholder="Password" />
+        <!-- Number Input -->
+        <input type="number" name="quantity" />
+        <!-- Date Input -->
+        <input type="date" name="date" />
+        <!-- Checkbox -->
+        <label>
+          Are you an admin?
+          <input type="checkbox" name="isAdmin" value="true" />
+        </label>
+        <!-- Select -->
+        <select name="favoriteFruit">
+          <option value="">Nothing selected</option>
+          <option value="banana">Banana</option>
+          <option value="apple">Apple</option>
+        </select>
+        <!-- Radio Group -->
+        <h3>Do you like cats</h3>
+        <label>
+          Yes
+          <input type="radio" name="likesCats" value="yes" />
+        </label>
+        <label>
+          No
+          <input type="radio" name="likesCats" value="no" />
+        </label>
+        <textarea name="area" rows="10"></textarea>
+        <button type="submit">Submit form</button>
+      </form>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

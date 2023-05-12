@@ -1,0 +1,27 @@
+:root {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  width: 70vw;
+  margin-inline: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding-inline: 0.6rem;
+  padding-block: 0.4rem;
+}
+
+label {
+  font-size: 0.8rem;
+  color: #aaa;
+}
